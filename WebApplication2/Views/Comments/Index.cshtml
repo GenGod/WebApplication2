@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "Сообщения";
+}
+
+@model List<WebApplication2.Models.Comment>
+
+<h2>Сообщения:</h2>
+<div class="row">
+    @{
+        if (Model.Count == 0)
+        {
+            <h4>Сообщений пока нет.</h4>
+        }
+        else {
+            foreach (var comment in Model)
+            {
+            <div class="col-lg-4">
+                <h4>@comment.getUserName() (<i>@comment.getUserEmail()</i>)</h4>
+                <label>@comment.getComment()</label>
+                <hr />
+            </div>
+                }
+            }
+        }
+</div>
+
+
+<div class="row">
+    <div class="col-lg-4 col-lg-offset-4">
+        <h2>Комментировать:</h2>
+        @using (Html.BeginForm("AddComment", "Comments", FormMethod.Post, new { @role = "form" }))
+        {
+            <div class="form-group">
+                <label>Ваше имя:</label>
+                <input type="text" name="userName" class="form-control" placeholder="Имя" />
+            </div>
+            <div class="form-group">
+                <label>Ваш email:</label>
+                <input type="email" name="userEmail" class="form-control" placeholder="Email" />
+            </div>
+            <div class="form-group">
+                <label>Ваш комментарий:</label>
+                <textarea name="comment" class="form-control" ></textarea>
+            </div>
+            <div class="form-group col-lg-offset-3">
+                <input type="submit" value="Оставить комментарий" class="btn btn-success"/>
+            </div>
+        }
+    </div>
+</div>

@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "AddComment";
+}
+
+@model int
+
+@if (Model == 0)
+{
+    <h2>Комментарий не добавлен! Произошла досадная ошибка((</h2>
+}
+else
+{
+    <h2>Комментарий успешно добавлен!</h2>
+    <input type="submit" value="Вернуться на главную страницу" class="btn" onclick="turnBack()"/>
+}
