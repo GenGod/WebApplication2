@@ -1,0 +1,5 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/WebPathMapping/IgnoredPaths/=VIEWS_005CCONTACTS_005CGENGOD_002EESY_002EES/@EntryIndexedValue">Views\Contacts\gengod.esy.es</s:String>
+	<s:String x:Key="/Default/CodeInspection/WebPathMapping/MappedPaths/=VIEWS_005CCONTACTS_005CCOMMENTS/@EntryIndexedValue"></s:String>
+	<s:String x:Key="/Default/CodeInspection/WebPathMapping/PathsInCorrectCasing/=VIEWS_005CCONTACTS_005CCOMMENTS/@EntryIndexedValue">Views\Contacts\comments</s:String>
+	<s:String x:Key="/Default/CodeInspection/WebPathMapping/PathsInCorrectCasing/=VIEWS_005CCONTACTS_005CGENGOD_002EESY_002EES/@EntryIndexedValue">Views\Contacts\gengod.esy.es</s:String></wpf:ResourceDictionary>
